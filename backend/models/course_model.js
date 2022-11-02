@@ -19,7 +19,7 @@ const course = {
     },
     update: function (id, update_data, callback) {
             return db.query( 
-                'update course set fname=?,lname=?, password=? where id_course=?',
+                'update course set name=?,ects=? where id_course=?',
                 [update_data.name, update_data.ects, id],
                 callback);
     }
